@@ -1,0 +1,20 @@
+ItemPool (
+    pool: [
+        ItemEntity (
+            item: Glue,
+            weight: 25,
+        ),
+        ItemEntity (
+            item: Placebo,
+            weight: 25,
+        ),
+        ItemEntity (
+            item: Schoolbag,
+            weight: 25,
+        ),
+        ItemEntity (
+            item: Wheel,
+            weight: 25,
+        ),
+    ],
+)

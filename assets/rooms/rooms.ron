@@ -1,0 +1,206 @@
+Rooms (
+    rooms: [
+        Room (
+            room_type: Start,
+            num_exits: 1,
+            arena: 0,
+            encounters: Some([
+                Encounter (
+                    enemys: [
+                        EnemyEntity (
+                            enemy_type: Sloth,
+                            position: DeserVec2 (
+                                x: 0.0,
+                                y: 0.0,
+                            ),
+                        ),
+                        EnemyEntity (
+                            enemy_type: Sloth,
+                            position: DeserVec2 (
+                                x: 0.0,
+                                y: 100.0,
+                            ),
+                        )
+                    ],
+                    weight: 25,
+                    is_select: false,
+                ),
+                Encounter (
+                    enemys: [
+                        EnemyEntity (
+                            enemy_type: Sloth,
+                            position: DeserVec2 (
+                                x: -100.0,
+                                y: 0.0,
+                            ),
+                        ),
+                        EnemyEntity (
+                            enemy_type: Sloth,
+                            position: DeserVec2 (
+                                x: 100.0,
+                                y: 0.0,
+                            ),
+                        ),
+                    ],
+                    weight: 25,
+                    is_select: false,
+
+                ),
+            ]),
+            weight: 10,
+            force_select_depth_min: None,
+            force_select_depth_max: None,
+            is_select: false, 
+
+        ),
+        Room (
+            room_type: Treasure,
+            num_exits: 2,
+            arena: 1,
+            encounters: None,
+            weight: 25,
+            force_select_depth_min: Some(3),
+            force_select_depth_max: Some(6),
+            is_select: false, 
+        ),
+        Room (
+            room_type: Combat,
+            num_exits: 2,
+            arena: 1,
+            encounters: Some([
+                Encounter (
+                    enemys: [
+                        EnemyEntity (
+                            enemy_type: Envy,
+                            position: DeserVec2 (
+                                x: 0.0,
+                                y: 0.0,
+                            ),
+                        ),
+                        EnemyEntity (
+                            enemy_type: Wrath,
+                            position: DeserVec2 (
+                                x: 0.0,
+                                y: 100.0,
+                            ),
+                        )
+                    ],
+                    weight: 25,
+                    is_select: false,
+                ),
+                Encounter (
+                    enemys: [
+                        EnemyEntity (
+                            enemy_type: Envy,
+                            position: DeserVec2 (
+                                x: -100.0,
+                                y: 0.0,
+                            ),
+                        ),
+                        EnemyEntity (
+                            enemy_type: Envy,
+                            position: DeserVec2 (
+                                x: 100.0,
+                                y: 0.0,
+                            ),
+                        ),
+                    ],
+                    weight: 25,
+                    is_select: false,
+
+                ),
+            ]),
+            weight: 25,
+            force_select_depth_min: None,
+            force_select_depth_max: None,
+                        is_select: false, 
+        ),
+        Room (
+            room_type: PreBoss,
+            num_exits: 1,
+            arena: 1,
+            encounters: Some([
+                Encounter (
+                    enemys: [
+                        EnemyEntity (
+                            enemy_type: Lust,
+                            position: DeserVec2 (
+                                x: 0.0,
+                                y: 0.0,
+                            ),
+                        ),
+                        EnemyEntity (
+                            enemy_type: Lust,
+                            position: DeserVec2 (
+                                x: 0.0,
+                                y: 100.0,
+                            ),
+                        )
+                    ],
+                    weight: 25,
+                    is_select: false,
+                ),
+                Encounter (
+                    enemys: [
+                        EnemyEntity (
+                            enemy_type: Lust,
+                            position: DeserVec2 (
+                                x: -100.0,
+                                y: 0.0,
+                            ),
+                        ),
+                        EnemyEntity (
+                            enemy_type: Lust,
+                            position: DeserVec2 (
+                                x: 100.0,
+                                y: 0.0,
+                            ),
+                        ),
+                    ],
+                    weight: 25,
+                    is_select: false,
+
+                ),
+            ]),
+            weight: 25,
+            force_select_depth_min: Some(9),
+            force_select_depth_max: Some(9),
+            is_select: false, 
+        ),
+        Room (
+            room_type: Boss,
+            num_exits: 1,
+            arena: 1,
+            encounters: Some([
+                Encounter (
+                    enemys: [
+                        EnemyEntity (
+                            enemy_type: Greed,
+                            position: DeserVec2 (
+                                x: 0.0,
+                                y: 0.0,
+                            ),
+                        ),
+                    ],
+                    weight: 25,
+                    is_select: false,
+                ),
+            ]),
+            weight: 25,
+            force_select_depth_min: Some(10),
+            force_select_depth_max: Some(10),
+            is_select: false, 
+        ),
+        Room (
+            room_type: PreBoss,
+            num_exits: 0,
+            arena: 1,
+            encounters: None,
+            weight: 25,
+            force_select_depth_min: Some(11),
+            force_select_depth_max: Some(11),
+            is_select: false, 
+
+        )
+    ]
+)
